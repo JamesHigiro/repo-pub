@@ -29,7 +29,7 @@ interface PaginationParams {
   limit: number;
 }
 
-const API_BASE_URL = 'https://68972036250b078c204109ef.mockapi.io/api/v1';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://68972036250b078c204109ef.mockapi.io/api/v1';
 
 export const jobsAPI = {
   // Get all jobs with optional filtering and pagination

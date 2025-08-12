@@ -14,7 +14,7 @@ import applicationsReducer, {
   addApplication
 } from '../../../store/slices/applicationsSlice'
 import { userAPI } from '../../../services/userAPI'
-import { mockUser, mockJob, mockApplication } from '../../../test/utils'
+import { mockApplication } from '../../../test/utils'
 
 // Mock the userAPI
 vi.mock('../../../services/userAPI', () => ({

@@ -99,7 +99,7 @@ const JobList: React.FC<JobListProps> = ({ onApplicationUpdate }) => {
   };
 
   // Pagination handler
-  const handlePageChange = (page: number, pageSize?: number) => {
+  const handlePageChange = (page: number) => {
     dispatch(setCurrentPage(page));
   };
 

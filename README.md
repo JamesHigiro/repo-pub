@@ -94,13 +94,21 @@ src/
    npm install
    ```
 
-3. **Start Development Server**
+4. **Start Development Server**
    ```bash
    npm run dev
    ```
 
 4. **Open in Browser**
    Navigate to `http://localhost:5173`
+
+## 🔧 Environment Variables
+
+The application uses environment variables for configuration. Create a `.env` file in the root directory with the following variables:
+
+### Required Variables
+- `VITE_API_BASE_URL`: The base URL for the API endpoints
+  - Default: `https://68972036250b078c204109ef.mockapi.io/api/v1`
 
 ### Available Scripts
 

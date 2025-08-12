@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Layout, Typography, Card, Row, Col, Statistic, Avatar, Button, Space, Tabs } from 'antd';
+import { Layout, Typography, Card, Row, Col, Statistic, Button, Tabs } from 'antd';
 import {
   UserOutlined,
   LogoutOutlined,

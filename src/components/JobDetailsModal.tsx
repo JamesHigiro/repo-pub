@@ -10,7 +10,7 @@ import {
 } from '@ant-design/icons';
 import type { Job } from '../services/jobsAPI';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { applyToJob, checkApplicationStatus } from '../store/slices/applicationsSlice';
+import { applyToJob } from '../store/slices/applicationsSlice';
 import type { AuthState, ApplicationsState } from '../store/types';
 
 const { Title, Text, Paragraph } = Typography;
@@ -39,7 +39,7 @@ const JobDetailsModal: React.FC<JobDetailsModalProps> = ({
 
   // Check if user has already applied when modal opens
   useEffect(() => {
-    const checkApplicationStatus = async () => {
+    const checkStatus = async () => {
       if (user && job && visible) {
         // If we already know the user has applied, use that info
         if (isAlreadyApplied) {
@@ -67,7 +67,7 @@ const JobDetailsModal: React.FC<JobDetailsModalProps> = ({
       }
     };
 
-    checkApplicationStatus();
+    checkStatus();
   }, [user, job, visible, isAlreadyApplied, appliedJobIds]);
 
   // Update hasApplied when appliedJobIds changes
