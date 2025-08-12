@@ -11,7 +11,7 @@ import './App.css';
 const AppContent: React.FC = () => {
   const dispatch = useAppDispatch();
   const auth = useAppSelector((state) => state.auth) as AuthState;
-  const { isAuthenticated, isLoading } = auth;
+  const { isAuthenticated } = auth;
   const navigate = useNavigate();
 
   // Load user from storage on app start

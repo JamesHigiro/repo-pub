@@ -215,7 +215,7 @@ const RegistrationTest: React.FC = () => {
           </Text>
           
           {registeredUsers.length > 0 ? (
-            registeredUsers.map((user, index) => (
+            registeredUsers.map((user) => (
               <Card key={user.id} size="small" style={{ marginBottom: '8px' }}>
                 <Space direction="vertical" size="small">
                   <div>

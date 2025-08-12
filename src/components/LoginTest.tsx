@@ -190,7 +190,7 @@ const LoginTest: React.FC = () => {
               </Text>
               
               {registeredUsers.length > 0 ? (
-                registeredUsers.map((testUser, index) => (
+                registeredUsers.map((testUser) => (
                   <Card key={testUser.id} size="small" style={{ backgroundColor: '#f9f9f9' }}>
                     <Space direction="vertical" size="small" style={{ width: '100%' }}>
                       <div>

@@ -1,8 +1,6 @@
 import LoginPage from '../pages/auth/LoginPage';
 import RegisterPage from '../pages/auth/RegisterPage';
 import DashboardPage from '../pages/DashboardPage';
-import RegistrationTest from '../components/RegistrationTest';
-import LoginTest from '../components/LoginTest';
 
 export interface RouteConfig {
   path: string;

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Table, Tag, Space, Typography, Button, Empty, Spin, Tooltip, message } from 'antd';
+import { Card, Table, Tag, Space, Typography, Button, Empty, Spin, message } from 'antd';
 import { 
   CalendarOutlined, 
-  EnvironmentOutlined, 
+ 
   EyeOutlined,
   ClockCircleOutlined,
-  CheckCircleOutlined,
   CloseCircleOutlined,
   TrophyOutlined,
   UsergroupAddOutlined
@@ -18,15 +17,6 @@ import JobDetailsModal from './JobDetailsModal';
 
 const { Title, Text } = Typography;
 
-interface ApplicationWithDetails {
-  jobId: string;
-  jobTitle: string;
-  company: string;
-  status: string;
-  appliedAt: string;
-  notes?: string;
-  jobDetails?: any;
-}
 
 interface MyApplicationsProps {
   onApplicationUpdate?: () => void;
@@ -200,7 +190,7 @@ const MyApplications: React.FC<MyApplicationsProps> = ({ onApplicationUpdate }) 
       dataIndex: 'appliedAt',
       key: 'appliedAt',
       width: '10%',
-      render: (date: string, record: any) => (
+      render: (date: string) => (
         <Space>
           <CalendarOutlined style={{ color: '#1890ff' }} />
           <Text>{formatDate(date)}</Text>
