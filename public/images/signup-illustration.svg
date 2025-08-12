@@ -1,0 +1,103 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="160" cy="120" r="100" fill="rgba(255,255,255,0.1)" opacity="0.5"/>
+  
+  <!-- Main Character -->
+  <g transform="translate(120, 60)">
+    <!-- Head -->
+    <circle cx="40" cy="25" r="18" fill="#FFD4A3"/>
+    
+    <!-- Hair -->
+    <path d="M22 15 C22 8, 30 5, 40 5 C50 5, 58 8, 58 15 C58 12, 55 10, 50 12 C45 10, 35 10, 30 12 C25 10, 22 12, 22 15 Z" fill="#8B4513"/>
+    
+    <!-- Face -->
+    <circle cx="35" cy="22" r="1.5" fill="#333"/>
+    <circle cx="45" cy="22" r="1.5" fill="#333"/>
+    <path d="M37 28 Q40 30 43 28" stroke="#333" stroke-width="1" fill="none" stroke-linecap="round"/>
+    
+    <!-- Body -->
+    <rect x="28" y="40" width="24" height="35" rx="12" fill="#5A67D8"/>
+    
+    <!-- Arms -->
+    <rect x="18" y="45" width="12" height="4" rx="2" fill="#FFD4A3"/>
+    <rect x="50" y="45" width="12" height="4" rx="2" fill="#FFD4A3"/>
+    
+    <!-- Legs -->
+    <rect x="32" y="72" width="6" height="20" rx="3" fill="#4A5568"/>
+    <rect x="42" y="72" width="6" height="20" rx="3" fill="#4A5568"/>
+    
+    <!-- Shoes -->
+    <ellipse cx="35" cy="95" rx="4" ry="2" fill="#2D3748"/>
+    <ellipse cx="45" cy="95" rx="4" ry="2" fill="#2D3748"/>
+  </g>
+  
+  <!-- Laptop -->
+  <g transform="translate(80, 140)">
+    <rect x="0" y="15" width="40" height="25" rx="2" fill="#E2E8F0"/>
+    <rect x="2" y="17" width="36" height="20" rx="1" fill="#1A202C"/>
+    <rect x="4" y="19" width="32" height="14" rx="1" fill="#4299E1"/>
+    
+    <!-- Screen content -->
+    <rect x="6" y="21" width="8" height="2" rx="1" fill="white"/>
+    <rect x="6" y="25" width="12" height="1" rx="0.5" fill="rgba(255,255,255,0.7)"/>
+    <rect x="6" y="27" width="10" height="1" rx="0.5" fill="rgba(255,255,255,0.7)"/>
+    <rect x="6" y="29" width="14" height="1" rx="0.5" fill="rgba(255,255,255,0.7)"/>
+    
+    <!-- Keyboard -->
+    <rect x="0" y="40" width="40" height="8" rx="2" fill="#CBD5E0"/>
+    <rect x="18" y="42" width="4" height="1" rx="0.5" fill="#A0AEC0"/>
+  </g>
+  
+  <!-- Floating Elements -->
+  <!-- Document -->
+  <g transform="translate(200, 80)">
+    <rect x="0" y="0" width="16" height="20" rx="1" fill="white" opacity="0.9"/>
+    <rect x="2" y="3" width="8" height="1" rx="0.5" fill="#5A67D8"/>
+    <rect x="2" y="6" width="12" height="0.5" rx="0.25" fill="#A0AEC0"/>
+    <rect x="2" y="8" width="10" height="0.5" rx="0.25" fill="#A0AEC0"/>
+    <rect x="2" y="10" width="11" height="0.5" rx="0.25" fill="#A0AEC0"/>
+  </g>
+  
+  <!-- Briefcase -->
+  <g transform="translate(40, 100)">
+    <rect x="0" y="5" width="20" height="12" rx="2" fill="#9F7AEA"/>
+    <rect x="8" y="2" width="4" height="3" rx="1" fill="#805AD5"/>
+    <circle cx="15" cy="11" r="1" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Chart -->
+  <g transform="translate(230, 140)">
+    <rect x="0" y="12" width="2" height="8" rx="1" fill="#48BB78"/>
+    <rect x="4" y="8" width="2" height="12" rx="1" fill="#38B2AC"/>
+    <rect x="8" y="4" width="2" height="16" rx="1" fill="#4299E1"/>
+    <rect x="12" y="10" width="2" height="10" rx="1" fill="#9F7AEA"/>
+  </g>
+  
+  <!-- Network Nodes -->
+  <g transform="translate(60, 50)">
+    <circle cx="0" cy="0" r="3" fill="#F56565" opacity="0.8"/>
+    <circle cx="15" cy="8" r="3" fill="#48BB78" opacity="0.8"/>
+    <circle cx="25" cy="-5" r="3" fill="#4299E1" opacity="0.8"/>
+    
+    <!-- Connecting lines -->
+    <line x1="0" y1="0" x2="15" y2="8" stroke="white" stroke-width="1" opacity="0.6"/>
+    <line x1="15" y1="8" x2="25" y2="-5" stroke="white" stroke-width="1" opacity="0.6"/>
+  </g>
+  
+  <!-- Floating particles -->
+  <circle cx="50" cy="200" r="2" fill="rgba(255,255,255,0.6)">
+    <animate attributeName="cy" values="200;180;200" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="270" cy="60" r="1.5" fill="rgba(255,255,255,0.4)">
+    <animate attributeName="cy" values="60;40;60" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="180" r="2.5" fill="rgba(255,255,255,0.5)">
+    <animate attributeName="cy" values="180;160;180" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Success checkmark -->
+  <g transform="translate(250, 100)">
+    <circle cx="0" cy="0" r="8" fill="#48BB78" opacity="0.9"/>
+    <path d="M-3 0 L-1 2 L3 -3" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
